@@ -12,6 +12,11 @@ $.ajax({
 
     var main= $("#mainContent")
         main.attr("style","border: dotted; margin-bottom: 40px; padding:20px;")
+    var foodCard = $("<div class='card'>")
+    var foodRow =$("<row>")
+    var 
+
+
     var foodTitle =$("<h5>")
         foodTitle.text(response.hits[0].recipe.label)
     var img = $("<img>")
