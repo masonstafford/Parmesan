@@ -81,6 +81,10 @@ form {
     margin-top: 153px;
 }
 
+#recipeArea {
+  display: flex;
+}
+
  .ham {
     cursor: pointer;
     transition: transform 400ms;
