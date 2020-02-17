@@ -12,21 +12,21 @@ $.ajax({
     method: "GET"
 }).then(function(response){
 
-    var main= $("#mainContent")
+    var main = $("#mainContent")
         main.attr("style","border: groove; margin-bottom: 40px; padding:20px;")
-    var foodCard = $("<div class='card mb-3 p-3'>")
-    var foodRow1 =$("<div class='row'>")
-    var foodCol1 = $("<div class='col-6'>")
-    var foodCol2 = $("<div class='col-6'>")
+    var foodCard = $("<div class='card'>") //$("<div class='card mb-3 p-3'>")
+    var foodRow1 = $("<div class='columns'>") //$("<div class='row'>")
+    var foodCol1 = $("<div class='column'>")  //$("<div class= 'col-6'>")
+    var foodCol2 = $("<div class='column'>")  //$("<div class='col-6'>")
     var foodTitle =$("<h5>")
         foodTitle.text(response.hits[0].recipe.label)
     var img = $("<img>")
         img.attr("src",response.hits[0].recipe.image)
-    var healthLabel = $("<ul>")
-        healthLabel.attr("sytle","border: dotted;")
+    var healthLabel = $("<ul class='health-label'>")
+        //healthLabel.attr("style","border: dotted;")
         healthLabel.text("Health Label: ")
-    var foodList =$("<ul>")
-        foodList.attr("style","border: dotted;")
+    var foodList = $("<ul>")
+        //foodList.attr("style","border: dotted;")
         foodList.text("Ingredients: ")
     main.prepend(foodCard)
     foodCard.append(foodRow1)
@@ -37,14 +37,15 @@ $.ajax({
     foodCol2.append(healthLabel)
     foodCol2.append(foodList)
 
-    for(var h = 0; h<response.hits[0].recipe.healthLabels.length; h++){
+    for (var h = 0; h < response.hits[0].recipe.healthLabels.length; h++) {
+        
         var heaLabEl = $("<li>")
             heaLabEl.text(response.hits[0].recipe.healthLabels[h])
 
             healthLabel.append(heaLabEl)
     }
 
-    for(var i = 0; i < response.hits[0].recipe.ingredientLines.length; i++){
+    for (var i = 0; i < response.hits[0].recipe.ingredientLines.length; i++) {
     
         var ingEl = $("<li>")
             ingEl.text(response.hits[0].recipe.ingredientLines[i])

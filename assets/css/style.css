@@ -14,10 +14,11 @@ body, html {
 
 .columns {
     margin: 0;
+    padding: 10px;
 }
 
 .column {
-    padding: 0;
+    padding: 10px;
     display: flex;
     justify-content: center;
 }
@@ -42,15 +43,15 @@ form {
 }
 
 #inputSearch {
-    padding: 0 200px 0 200px;
+    /* padding: 0 200px 0 200px; */
     border-top-left-radius: 5px #D6BD51;
     border-bottom-left-radius: 5px #D6BD51;
     border-right: solid 4px #D6BD51;
     border-left: solid 4px #D6BD51;
-    background-color: #ffffff00;
+    background-color:white;
     border-top: solid 4px #D6BD51;
     border-bottom: solid 4px #D6BD51;
-    color: #ffffff;
+    color: black;
 }
 
 #buttonSearch {
@@ -125,3 +126,31 @@ form {
     stroke-dasharray: 14 82;
     stroke-dashoffset: -72px;
   }
+
+  ul {
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: 1.5em;
+    border-right: 1px solid black;
+  }
+
+  .border {
+    border: 1px solid silver;
+  }
+
+  .health-label {
+    border-right: 1px solid black;
+  }
+
+  li {
+    font-weight: normal;
+  }
+
+  #foodForm {
+    width: 100%;
+  }
+
+  
