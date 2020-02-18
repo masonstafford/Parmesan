@@ -2,8 +2,46 @@
     background: linear-gradient(120deg,  #3A4660 60%, #E0CE43 60%); /*rgb(231, 206, 81) 60%*/
     font-family: 'Lora', serif;
 }
-
+.hidden{
+  display: none;
+}
 .sectionB {
+
+}
+.foodCard{
+  background-color: #3a4660;
+}
+
+.foodRow{
+  font-size: x-large;
+}
+h1{
+  margin: 0 auto;
+}
+.imgEl{
+  margin-bottom: 15px;
+  border: 5px groove black;
+
+}
+
+.ulEl{
+  
+  list-style: square;
+  list-style-position: inside;
+  padding: 30px;
+  font-size: xx-large;
+}
+
+#recipeArea{
+  border: groove; 
+  margin-bottom: 40px; 
+  padding:20px;
+}
+
+
+.imgClass{
+  padding-right:20px;
+  border-right: 2px;
 }
 
 .section {
@@ -48,7 +86,7 @@ form:hover {
 }
 
 #inputSearch {
-    padding: 0 200px 0 200px;
+    /* padding: 0 200px 0 200px; */
     border-top-left-radius: 5px #efefef;
     border-bottom-left-radius: 5px #efefef;
     border-right: solid 4px #efefef;
