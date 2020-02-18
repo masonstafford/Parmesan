@@ -11,19 +11,42 @@
   </head>
   <body>
 
-    <section class="section">
-          
+    <section class="section sectionA">
+
       <div class="containerOne">
         <div id="header" class="columns">
           <div id="menu" class="column is-4">
-            <svg class="ham hamRotate180 ham5" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-              <path class="line top" d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
-              <path class="line middle" d="m 70,50 h -40" />
-              <path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" /> 
-            </svg>
-          </div>
-          <div id="logo" class="column is-4">Parmesan</div>
+
+            <nav class="breadcrumb" aria-label="breadcrumbs">
+              <ul>
+                <li><a id="link1" href="saved.html">Saved</a></li>
+                <li><a id="link2" href="about.html">Developers</a></li>
+              </ul>
+            </nav>
+
+            <!-- <div class="dropdown is-active">
+              <div class="dropdown-trigger">
+                <svg class="ham hamRotate180 ham5" aria-haspopup="true" aria-controls="dropdown-menu" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                  <path class="line top" d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
+                  <path class="line middle" d="m 70,50 h -40" />
+                  <path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.68551 8.5,-10.375 0,-8.292653 -6.122707,-9.002293 -8.5,-6.625 l -11.071429,11.071429" /> 
+                </svg>
+              </div>
+            </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu">
+            <div class="dropdown-content">
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">With a divider</a>
+              <hr class="dropdown-divider">
+              <a href="#" class="dropdown-item">With a divider</a>
+            </div>
+          </div> -->
+
+
         </div>
+          <div id="logo" class="column is-4"><a class="logo" href="#" target="_blank">Parmesan</a></div>
+        </div>
+          <P>-Find a recipe, and let's get cookin'-</P>
       </div>
             
       <div class="containerTwo">
@@ -35,18 +58,19 @@
             </form>
           </div> 
         </div>
-      </div>  
+      </div> 
+
     </section>
 
-    <section class="section" id="recipeArea">
-
+    <section class="sectionB" id="recipeArea">
       <div class="columns">
-        <div id="recipeArea" class="column is-12">
-         
-        </div>
+        <div class="column is-6">img</div>
+        <div class="column is-6">health</div>
+        <div class="column is-12">recipe</div>
+        <div class="column is-12">iframe</div>
       </div>
-      
     </section>
+
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="assets/js/script.js"></script>
   </body>
