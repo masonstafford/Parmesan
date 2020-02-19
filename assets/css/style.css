@@ -2,34 +2,53 @@
     background: linear-gradient(120deg,  #3A4660 60%, #E0CE43 60%); /*rgb(231, 206, 81) 60%*/
     font-family: 'Lora', serif;
 }
-.hidden{
+/* .hidden{
   display: none;
-}
+} */
 .sectionB {
 
 }
 .foodCard{
   background-color: #3a4660;
+  height: 100%;
+}
+
+.foodList{
+  font-size: large;
+  text-align: left;
 }
 
 .foodRow{
   font-size: x-large;
 }
+
+calEl{
+  color: aliceblue;
+}
+
 h1{
+  color: aliceblue;
   margin: 0 auto;
 }
+
 .imgEl{
   margin-bottom: 15px;
   border: 5px groove black;
 
 }
 
+li {
+  color: aliceblue;
+  /* margin: 5px; */
+  /* text-align: center; */
+}
+
 .ulEl{
-  
   list-style: square;
-  list-style-position: inside;
+  /* list-style-position: inside; */
   padding: 30px;
   font-size: xx-large;
+  color: aliceblue;
 }
 
 #recipeArea{
@@ -54,6 +73,7 @@ h1{
 }
 
 .column {
+    color: aliceblue;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -112,6 +132,14 @@ form:hover {
 
 #header {
     display: flex;
+}
+
+iframe {
+  background-color: white;
+  padding: 25px;
+  border: black;
+  width: 100%;
+  height: 40%;
 }
 
 #logo {
@@ -224,3 +252,17 @@ p {
     stroke-dasharray: 14 82;
     stroke-dashoffset: -72px;
   }
+
+  @media only screen and (max-width: 500px) {
+    .foodCard {
+      height: 80%;
+    }
+
+    .foodList {
+      width: 100%;
+    }
+
+    .iframe {
+      height: 30%;
+    }
+  };

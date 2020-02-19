@@ -19,12 +19,31 @@ $.ajax({
     var foodTitle = $("<h1>")
         foodTitle.text(response.hits[0].recipe.label)
     var foodRow2 = $("<div class='columns foodRow2'>")
+    // var recipeBox = $("<div class='columns'>")
+    // var foodRow3 = $("<div class='columns'>")
+    // var foodCol3 = $("<div class='column is-6'>")
     var foodCol1 = $("<div class='column is-6'>")
     var imgEl = $("<img class= 'imgEl'>")
         imgEl.attr("src",response.hits[0].recipe.image)
     var foodCol2 = $("<div class='column column2 is-6'>")
     var healthLabel = $("<ul class=' ulEl menu-list'>")
         healthLabel.text("Health Labels: ")
+    var nutritionalContent = $("<ul class=' ulEl nutrition-list'>")
+        nutritionalContent.text("Nutritional Content: ")
+    var calEl = $("<div class='column'>")
+        calEl.text("Calories: " + response.hits[0].recipe.calories.toFixed(0)+ " KCAL")
+    var fatEl = $("<div class='column'>")
+        fatEl.text("Fat: " + response.hits[0].recipe.totalNutrients.FAT.quantity.toFixed(0)+" G")
+    var proteinEl =$("<div class='column'>")
+        proteinEl.text("Protein: " + response.hits[0].recipe.totalNutrients.PROCNT.quantity.toFixed(0)+" G")
+    var foodList = $("<ul>")
+    //foodList.attr("style","border: dotted;")
+    var iframeEl = $("<iframe class = 'iframe'>") 
+    var sourceLink = response.hits[0].recipe.url
+    // iframeEl.attr("width","100%","height","50%")
+        iframeEl.attr("src",response.hits[0].recipe.url)
+        console.log(sourceLink);
+
 
     main.prepend(foodCard)
     foodCard.append(foodRow)
@@ -34,6 +53,14 @@ $.ajax({
     foodCol1.append(imgEl)
     foodRow2.append(foodCol2)
     foodCol2.append(healthLabel)
+    // foodCol2.append(foodList)
+    // foodRow3.append(foodCol3)
+    foodCol2.append(nutritionalContent)
+    nutritionalContent.append(calEl)
+    nutritionalContent.append(fatEl)
+    nutritionalContent.append(proteinEl)
+    foodCard.append(foodList)
+    foodCard.append(iframeEl)
     
     
   
@@ -45,7 +72,12 @@ $.ajax({
             healthLabel.append(heaLabEl)
     }
 
-    
+    for(var i = 0; i < response.hits[0].recipe.ingredientLines.length; i++){
+        var ingEl = $("<li>")
+            ingEl.text(response.hits[0].recipe.ingredientLines[i])
+            
+            foodList.append(ingEl)
+    }        
 
 });
 
