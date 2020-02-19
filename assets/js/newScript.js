@@ -3,9 +3,10 @@ $("#foodForm").on("submit",function(event){
     var foodName = $("#inputSearch").val()
     $("#inputSearch").val("")
     $("#recipeArea").empty()
-    // if(!foodName){
-    //     return
-    // }
+    
+    if(!foodName){
+        return
+    }
     var queryUrl = "https://api.edamam.com/search?q="+foodName+"&app_id=835f0cdb&app_key=ff6b03d8611201ee1634b8b112310c42&from=0&to=3&calories=500&health=alcohol-free"
 
 $.ajax({
