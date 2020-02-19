@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Parmesan</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-  </head>
-  <body>
 
-    <section class="section sectionA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parmesan</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
 
-      <div class="containerOne">
-        <div id="header" class="columns">
-          <div id="menu" class="column is-4">
+<body>
 
-            <nav class="breadcrumb" aria-label="breadcrumbs">
-              <ul>
-                <li><a id="link1" href="saved.html">Saved</a></li>
-                <li><a id="link2" href="about.html">Developers</a></li>
-              </ul>
-            </nav>
+  <section class="section sectionA">
 
-            <!-- <div class="dropdown is-active">
+    <div class="containerOne">
+      <div id="header" class="columns">
+        <div id="menu" class="column is-4">
+
+          <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+              <li><a id="link1" href="saved.html">Saved</a></li>
+              <li><a id="link2" href="about.html">Developers</a></li>
+            </ul>
+          </nav>
+
+          <!-- <div class="dropdown is-active">
               <div class="dropdown-trigger">
                 <svg class="ham hamRotate180 ham5" aria-haspopup="true" aria-controls="dropdown-menu" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
                   <path class="line top" d="m 30,33 h 40 c 0,0 8.5,-0.68551 8.5,10.375 0,8.292653 -6.122707,9.002293 -8.5,6.625 l -11.071429,-11.071429" />
@@ -44,34 +46,32 @@
 
 
         </div>
-          <div id="logo" class="column is-4"><a class="logo" href="#" target="_blank">Parmesan</a></div>
-        </div>
-          <P>-Find a recipe, and let's get cookin'-</P>
+        <div id="logo" class="column is-4"><a class="logo" href="#" target="_blank">Parmesan</a></div>
       </div>
-            
-      <div class="containerTwo">
-        <div class="columns">
-          <div id="search" class="column is-half is-offset-one-quarter">
-            <form id="foodForm"> 
-              <input id="inputSearch" class="input is-large" type="text">
-              <button id="buttonSearch">Search</button>
-            </form>
-          </div> 
+      <P>-Find a recipe, and let's get cookin'-</P>
+    </div>
+
+    <div class="containerTwo">
+      <div class="columns">
+        <div id="search" class="column is-half is-offset-one-quarter">
+          <form id="foodForm">
+            <input id="inputSearch" class="input is-large" type="text">
+            <button id="buttonSearch">Search</button>
+          </form>
         </div>
-      </div> 
+      </div>
+    </div>
+  </section>
 
-    </section>
+  <section id="recipeArea" class="hidden">
+  </section>
 
-    <section class="sectionB hidden" id="recipeArea">
-     
-    </section>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/js/newScript.js"></script>
-  </body>
-</html> 
-<!-- <div class="columns">
-        <div class="column is-6">img</div>
-        <div class="column is-6">health</div>
-        <div class="column is-12">recipe</div>
-        <div class="column is-12">iframe</div>
-      </div> -->
+  <!-- <section id="voiceOver" class="sectionVoice">
+    </section> -->
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="assets/js/newScript.js"></script>
+</body>
+
+</html>
