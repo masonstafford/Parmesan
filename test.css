@@ -5,7 +5,7 @@
   }
   
   .button {
-    background: #2B2D2F;
+    background: #efefef;
     height: 80px;
     width: 200px;
     text-align: center;
@@ -21,7 +21,7 @@
   
   .text {
     font: bold 1.25rem/1 poppins;
-    color: #71DFBE;
+    color: #3a4660;
     position: absolute;
     top: 50%;
     transform: translateY(-52%);
