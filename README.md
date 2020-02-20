@@ -1,6 +1,8 @@
 # Parmesan
 
-This app, Parmesan, is a web application that’s purpose is to find the perfect recipe based off of the user’s search input, the user also has the option to have the health facts and ingredients read out to them if needed, and to listen to them. 
+# Parmesan
+
+This app, Parmesan, is a web application that’s purpose is to find the perfect recipe based off of the user’s search input, the user also has the option to have the health facts and ingredients read out to them if needed.
 
 As a health conscious individual who cares about cooking at home, I often find it hard to search for a recipe because it’s time consuming and there are way too many options to pick from.
 I want a web application that is simple and easy to use, so that I can find the joy in cooking.
@@ -11,10 +13,17 @@ When I scroll down to view my recipe, I see a picture, health and allergie facts
 
 The link to the repository: https://github.com/masonstafford/projone/
 The link to the deployed version: https://masonstafford.github.io/projone/
+<<<<<<< HEAD
 
-View of the initial search screen:
+![View of the initial search screen]./images/viewofinitialsearch.png
 
-View of the recipe display:
+![View of the submit button animation]./images/viewofsubmitbuttonanim.png
 
-View of the audio option:
+![View of the recipe display]./images/viewofseachresult.png
+=======
+>>>>>>> d8d55fd679a2efc50cfbd6ba8a59512a9dfd89b6
+
+![View of the audio option]./images/viewofaudiobutton.png
+
+
 
