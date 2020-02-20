@@ -4,7 +4,6 @@ $("#foodForm").on("submit", function (event) {
     $("#inputSearch").val("")
     $("#recipeArea").removeClass("hidden")
     $("#recipeArea").empty()
-<<<<<<< HEAD
     
     if(!foodName){
         return
@@ -20,29 +19,8 @@ $.ajax({
     var foodCard = $("<div class='foodCard card'>")
     var foodRow = $("<div class='columns foodRow'>")
     var foodTitle = $("<h1>")
-=======
-    $("#voiceOver").empty()
-    if (!foodName) {
-        return
-    }
-    var queryUrl = "https://api.edamam.com/search?q=" + foodName + "&app_id=835f0cdb&app_key=ff6b03d8611201ee1634b8b112310c42&from=0&to=3&calories=500&health=alcohol-free"
-
-    $.ajax({
-        url: queryUrl,
-        method: "GET"
-    }).then(function (response) {
-
-
-        var main = $("#recipeArea")
-        var foodCard = $("<div class='foodCard card'>")
-        var foodRow = $("<div class='columns foodRow'>")
-        var foodTitle = $("<h1>")
->>>>>>> d52d1ec63d87416283d9a8e5e8199803357b771e
         foodTitle.text(response.hits[0].recipe.label)
         var foodRow2 = $("<div class='columns foodRow2'>")
-        // var recipeBox = $("<div class='columns'>")
-        // var foodRow3 = $("<div class='columns'>")
-        // var foodCol3 = $("<div class='column is-6'>")
         var foodCol1 = $("<div class='column is-6'>")
         var imgEl = $("<img class= 'imgEl'>")
         imgEl.attr("src", response.hits[0].recipe.image)
@@ -61,7 +39,7 @@ $.ajax({
         //foodList.attr("style","border: dotted;")
         var iframeEl = $("<iframe class = 'iframe'>")
         var sourceLink = response.hits[0].recipe.url
-        // iframeEl.attr("width","100%","height","50%")
+        iframeEl.attr("width","100%","height","300px")
         iframeEl.attr("src", response.hits[0].recipe.url)
 
 
