@@ -107,7 +107,7 @@ $.ajax({
         buildPlayer.text("Your browser does not support the audio element.");
         buildPlayer.playbackRate = -1;
 
-        window.scrollTo(0 , document.body.scrollHeight);
+        // window.scrollTo(0 , document.body.scrollHeight);
 
     });
    
