@@ -10,7 +10,7 @@ When I input my desired recipe into the search bar, a suggested recipe is genera
 When I scroll down to view my recipe, I see a picture, health and allergie facts,  I see a list of ingredients and the instructions.
 
 The link to the repository: https://github.com/masonstafford/projone/
-The link to the deployed version: 
+The link to the deployed version: https://masonstafford.github.io/projone/
 
 View of the initial search screen:
 
