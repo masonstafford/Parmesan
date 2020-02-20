@@ -13,17 +13,14 @@ When I scroll down to view my recipe, I see a picture, health and allergie facts
 
 The link to the repository: https://github.com/masonstafford/projone/
 The link to the deployed version: https://masonstafford.github.io/projone/
-<<<<<<< HEAD
 
-![View of the initial search screen]./images/viewofinitialsearch.png
+![View of the initial search screen]./assets/images/viewofinitialsearch.png
 
-![View of the submit button animation]./images/viewofsubmitbuttonanim.png
+![View of the submit button animation]./assets/images/viewofsubmitbuttonanim.png
 
-![View of the recipe display]./images/viewofseachresult.png
-=======
->>>>>>> d8d55fd679a2efc50cfbd6ba8a59512a9dfd89b6
+![View of the recipe display]./assets/images/viewofseachresult.png
 
-![View of the audio option]./images/viewofaudiobutton.png
+![View of the audio option]./assets/images/viewofaudiobutton.png
 
 
 
