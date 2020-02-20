@@ -12,15 +12,16 @@ When I input my desired recipe into the search bar, a suggested recipe is genera
 When I scroll down to view my recipe, I see a picture, health and allergie facts,  I see a list of ingredients and the instructions.
 
 The link to the repository: https://github.com/masonstafford/projone/
+
 The link to the deployed version: https://masonstafford.github.io/projone/
 
-![View of the initial search screen]./assets/images/viewofinitialsearch.png
 
-![View of the submit button animation]./assets/images/viewofsubmitbuttonanim.png
+<img width="1311" alt="viewofinitialsearch" src="https://user-images.githubusercontent.com/58992132/74961093-81de6380-53db-11ea-8686-74d86c8aa370.png">
+<img width="1202" alt="viewofsubmitbuttonanim" src="https://user-images.githubusercontent.com/58992132/74961096-81de6380-53db-11ea-9af1-4ff9263ab373.png">
 
-![View of the recipe display]./assets/images/viewofseachresult.png
+<img width="1412" alt="viewofsearchresult" src="https://user-images.githubusercontent.com/58992132/74961095-81de6380-53db-11ea-9cbd-27741da42cbe.png">
+<img width="794" alt="viewaudiobutton" src="https://user-images.githubusercontent.com/58992132/74961092-8145cd00-53db-11ea-835d-0b1e1aa5766c.png">
 
-![View of the audio option]./assets/images/viewofaudiobutton.png
 
 
 
