@@ -21,7 +21,7 @@ var basicTimeline = anime.timeline({
       duration: 1300,
       height: 10,
       width: 300,
-      backgroundColor: "#2B2D2F",
+      backgroundColor: "#efefef",
       border: "0",
       borderRadius: 100
     })
